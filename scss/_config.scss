@@ -12,7 +12,7 @@ $background-opacity: 0.9;
       background-size: cover;
       &::after {
         content: "";
-        position: absolute;
+        position: absolute !important;
         top: 0;
         right: 0;
         width: 100%;
