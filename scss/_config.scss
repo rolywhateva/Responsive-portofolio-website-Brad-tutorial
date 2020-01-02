@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #333;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url("../img/background.jpg");
@@ -21,6 +21,14 @@ $background-opacity: 0.9;
         z-index: -1;
       }
     }
+  }
+}
+//Set text color
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return black;
+  } @else {
+    @return white;
   }
 }
 @mixin easeOut {

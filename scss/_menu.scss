@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: white;
+    background-color: set-text-color($primary-color);
     @include easeOut;
   }
   &.close {
@@ -91,9 +91,13 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
+    &:hover {
+      color: $secondary-color;
+      transition: all 0.25s;
+    }
   }
 }
 @for $x from 1 through 4 {
